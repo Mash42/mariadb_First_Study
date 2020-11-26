@@ -1,14 +1,15 @@
-�y�C���[�W�쐬�菇�z
+【イメージ作成手順】
 
-windows:�R�}���h�v�����v�g
-mac:�^�[�~�i��
+windows:コマンドプロンプト
+mac:ターミナル
 
-�@cd Dockerfile������K�w�ֈړ�
+①cd Dockerfileがある階層へ移動
 
-�ADockerfile����C���[�W�쐬
-docker build . -t {���|�W�g����}:{�^�O}
+②Dockerfileからイメージ作成
+docker build . -t {リポジトリ名}:{TAG}
 
-�R�}���h��)
+コマンド例)
 docker build . -t mariadb_utf8
 
-��TAG���ȗ������latest�i�ŐV�j�ƂȂ�
+※TAGを省略するとlatest（最新）となる。
+※TAGとは・・・イメージのバージョンのこと。
